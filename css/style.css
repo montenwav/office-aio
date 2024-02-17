@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 26px;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.swiper {
+    background-image: url('/Office AIO/images/bg/1.avif');
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -2;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: 0.3s;
+}
+
+.logo-text {
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.logo-text h1 {
+    text-align: center;
+    max-width: 150px;
+    color: white;
+    font-size: 1.7em;
+    font-family: sans-serif;
+}
+
+.nav-bar li {
+    line-height: 1;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    margin-left: -10px;
+}
+
+.first {
+    background-image: url('/Office AIO/images/bg/1.avif');
+}
+
+.sec {
+    background-image: url('/Office AIO/images/bg/2.avif')
+}
+
+.third {
+    background-image: url('/Office AIO/images/bg/3.avif')
+}
+
+.forth {
+    background-image: url('/Office AIO/images/bg/4.png')
+}
+
+.fifth {
+    background-image: url('/Office AIO/images/bg/5.avif')
+}
+
+@media screen and (max-width: 960px) {
+    .nav-bar {
+        margin-left: -20px;
+        margin-top: 10px;
+    }
+
+    .nav-bar a {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .nav-bar li {
+        line-height: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .swiper {
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -2;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url('/Office AIO/images/bg/adaptive_1.avif');
+        background-position: center;
+        transition: 0.3s;
+    }
+    
+    .first_adaptive {
+        background-image: url('/Office AIO/images/bg/adaptive_1.avif');
+    }
+
+    .sec_adaptive {
+        background-image: url('/Office AIO/images/bg/adaptive_2.avif')
+    }
+
+    .third_adaptive {
+        background-image: url('/Office AIO/images/bg/adaptive_3.avif')
+    }
+
+    .forth_adaptive {
+        background-image: url('/Office AIO/images/bg/adaptive_4.avif')
+    }
+
+    .fifth_adaptive {
+        background-image: url('/Office AIO/images/bg/adaptive_5.avif')
+    }
+
+    .sixth_adaptive {
+        background-image: url('/Office AIO/images/bg/adaptive_6.avif')
+    }
+
+    .seventh_adaptive {
+        background-image: url('/Office AIO/images/bg/adaptive_7.avif')
+    }
+}

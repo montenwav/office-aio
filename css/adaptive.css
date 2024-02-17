@@ -1,0 +1,103 @@
+@media screen and (max-width: 960px) {
+
+    :root {
+        --bg-color: #eae8e5;
+        --p-color: rgb(155, 155, 155);
+        --main-text-color: #1d1d1d;
+    }
+    
+    .adaptive {
+        display: block;
+    }
+
+    .nav-bar {
+        opacity: 1;
+        margin-top: 15px;
+        margin-left: -20px;
+    }
+
+    .nav-bar li {
+        line-height: .8;
+    }
+
+    .nav-bar a:not(.selected) {
+        color: var(--p-color);
+        font-size: 22px;
+    }
+
+    .nav-bar a {
+        font-size: 22px;
+    }
+
+    .adapt_header {
+        width: 100%;
+        height: 60px;
+        position: fixed;
+        backdrop-filter: blur(25px);
+        background: #eae8e577;
+        left: 0;
+        top: 0;
+        display: flex;
+        z-index: 1;
+    }
+
+    .adapt_header_text a {
+        font-size: 22px;
+        color: var(--main-text-color);
+    }
+
+    .adapt_header_text {
+        font-weight: normal;
+        margin-left: 20px;
+    }
+
+    .toggle-btn {
+        width: 25px;
+        height: 25px;
+        top: 20px;
+        gap: 8px;
+        right: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        cursor: pointer;
+        z-index: 2;
+        position: fixed;
+    }
+
+    .span-1 {
+        position: relative;
+        rotate: 45deg;
+        top: 5px;
+        transition: rotate .3s;
+    }
+
+    .span-2 {
+        position: relative;
+        top: -5px;
+        rotate: -45deg;
+        transition: rotate .3s;
+    }
+
+    .toggle-btn span {
+        width: 70%;
+        height: 2px;
+        background: var(--main-text-color);
+    }
+
+    .adapt_content {
+        width: 100vw;
+        height: 100vh;
+        backdrop-filter: blur(25px);
+        background: #eae8e577;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        padding-top: 6px;
+        transition: opacity .3s;
+        opacity: 0;
+        display: none;
+    }
+}

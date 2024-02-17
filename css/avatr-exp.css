@@ -1,0 +1,299 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+    line-height: 1;
+    font-weight: normal;
+    /* border: 1px solid red; */
+    color: var(--main-text-color)
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg-color);
+}
+
+:root {
+    --bg-color: #eae8e5;
+    --p-color: rgb(155, 155, 155);
+    --main-text-color: #1d1d1d;
+}
+
+.main-container {
+    transition: opacity .3s;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.bg-left {
+    width: 35%;
+    position: fixed;
+    height: 100vh;
+}
+
+.slider {
+    transition: opacity .5s;
+    width: 62.5%;
+    margin-left: 35%;
+    margin-top: 30px;
+}
+
+.slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info_left {
+    width: 35%;
+}
+
+.info {
+    /* height: 5%; */
+    display: flex;
+    justify-content: left;
+}
+
+.info_right {
+    transition: height .5s;
+    width: 65%;
+    height: 300px;
+    overflow: hidden;
+    /* position: relative; */
+    z-index: -1;
+}
+
+.read {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0px -50px 100px 90px var(--bg-color);
+}
+
+.read h1 {
+    letter-spacing: -1px;
+    font-weight: normal;
+}
+
+.readless {
+    display: none;
+}
+
+.info_right p {
+    width: 100%;
+    font-size: 24px;
+    line-height: 1;
+}
+
+.info_left h4 {
+    font-weight: normal;
+    max-width: 150px;
+    font-size: 16px;
+    margin: 0;
+}
+
+.info_left>div {
+    margin-top: 15px;
+}
+
+.img-main-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.images-container {
+    margin-top: 30px;
+    display: flex;
+    width: 95%;
+    justify-content: left;
+    cursor: pointer;
+}
+
+
+.gallery img {
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.adaptive {
+    display: none;
+}
+
+.img img {
+    width: 100%;
+    height: 100%;
+}
+
+.main-text {
+    color: var(--main-text-color);
+}
+
+.description {
+    color: gray;
+    margin-top: -15px;
+    font-weight: normal
+}
+
+.back {
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+}
+
+.back h1 {
+    font-size: 24px;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    color: var(--main-text-color)
+}
+
+.images-text {
+    padding-left: 20px;
+    position: fixed;
+    top: 20px;
+    opacity: 1;
+    transition: .5s;
+}
+
+.images-text h1 {
+    margin: 0;
+    font-weight: normal;
+    padding: 0;
+    font-size: 24px;
+    line-height: 1;
+}
+
+.info_heading_text {
+    color: var(--p-color);
+}
+
+.info_heading_text+h4 {
+    margin-top: 0px;
+}
+
+.nav-bar {
+    opacity: 0;
+    margin-top: 15px;
+    transition: opacity .5s;
+}
+
+.nav-container {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+}
+
+.nav-bar a:not(.selected) {
+    color: var(--p-color);
+    font-size: 24px;
+    line-height: 1;
+}
+
+.nav-bar a:hover {
+    color: var(--main-text-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+.selected {
+    color: var(--main-text-color);
+    font-weight: 24px;
+}
+
+.nextproject {
+    cursor: pointer;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+.nextproject span {
+    color: var(--p-color);
+}
+
+ul {
+    list-style-type: none;
+    margin-left: -10px;
+}
+
+@media screen and (max-width: 960px) {
+
+    .info {
+        display: block;
+    }
+
+    .info_left {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .info-adapt-lines {
+        width: 95%;
+        height: 1px;
+        margin-bottom: 5px;
+        background: var(--main-text-color);
+    }
+
+    .info_left h4 {
+        max-width: 100%;
+    }
+
+    .info_left>div {
+        width: 50%;
+    }
+
+    .info_right {
+        width: 100%;
+    }
+
+    .read {
+        justify-content: flex-start;
+    }
+
+    .read h1 {
+        font-size: 22px;
+    }
+
+    .images-text {
+        display: none;
+    }
+
+    .bg-left {
+        display: none
+    }
+
+    .main-container {
+        transition: opacity .5s;
+        display: flex;
+        justify-content: center;
+    }
+
+    .slider {
+        margin-top: 150px;
+        width: 95%;
+        margin-left: 0%;
+        transition: opacity 1s;
+    }
+
+    .img-main-container {
+        margin-left: 20px;
+    }
+
+    .images-text h1 {
+        font-weight: normal;
+        line-height: 1;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .info_left>div {
+        width: 100%;
+    }
+}

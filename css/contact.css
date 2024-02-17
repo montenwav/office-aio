@@ -1,0 +1,82 @@
+:root {
+    --bg-color: #eae8e5e0;
+    --text-color: rgb(126, 126, 126);
+}
+
+.contact {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: var(--bg-color);
+    backdrop-filter: blur(50px);
+    font-weight: normal;
+    height: 100vh;
+    width: 100vw;
+    z-index: 999;
+    transition: opacity 0.5s;
+    /* opacity: 1; */
+    display: none;
+}
+
+a {
+    cursor: pointer;
+}
+
+input, textarea {
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 30px;
+}
+
+textarea {
+    width: 750px;
+    height: 750px;
+    resize: none;
+    margin-top: 15px;
+    margin-left: 30px;
+}
+
+input[type="email"] {
+    position: absolute;
+    width: 500px;
+    bottom: 30px;
+    left: 30px;
+}
+
+.contact_btns h1 {
+    font-weight: normal;
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+}
+
+.contact_btns h1:first-child {
+    bottom: 15px;
+    right: 30px;
+}
+
+.contact_btns h1:last-child {
+    top: 0px;
+    right: 30px;
+}
+
+@media screen and (max-width: 960px) {
+    input, textarea {
+        font-size: 20px;
+    }
+    
+    .contact_btns h1 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    input, textarea {
+        font-size: 18px;
+    }
+    
+    .contact_btns h1 {
+        font-size: 18px;
+    }
+}
