@@ -11,7 +11,7 @@ body {
 }
 
 .swiper {
-    background-image: url('/Office AIO/images/bg/1.avif');
+    background-image: url('../images/bg/1.avif');
     width: 100%;
     height: 100vh;
     position: absolute;
@@ -59,23 +59,23 @@ ul {
 }
 
 .first {
-    background-image: url('/Office AIO/images/bg/1.avif');
+    background-image: url('../images/bg/1.avif');
 }
 
 .sec {
-    background-image: url('/Office AIO/images/bg/2.avif')
+    background-image: url('../images/bg/2.avif')
 }
 
 .third {
-    background-image: url('/Office AIO/images/bg/3.avif')
+    background-image: url('../images/bg/3.avif')
 }
 
 .forth {
-    background-image: url('/Office AIO/images/bg/4.png')
+    background-image: url('../images/bg/4.png')
 }
 
 .fifth {
-    background-image: url('/Office AIO/images/bg/5.avif')
+    background-image: url('../images/bg/5.avif')
 }
 
 @media screen and (max-width: 960px) {
@@ -104,36 +104,36 @@ ul {
         z-index: -2;
         background-repeat: no-repeat;
         background-size: cover;
-        background-image: url('/Office AIO/images/bg/adaptive_1.avif');
+        background-image: url('../images/bg/adaptive_1.avif');
         background-position: center;
         transition: 0.3s;
     }
     
     .first_adaptive {
-        background-image: url('/Office AIO/images/bg/adaptive_1.avif');
+        background-image: url('../images/bg/adaptive_1.avif');
     }
 
     .sec_adaptive {
-        background-image: url('/Office AIO/images/bg/adaptive_2.avif')
+        background-image: url('../images/bg/adaptive_2.avif')
     }
 
     .third_adaptive {
-        background-image: url('/Office AIO/images/bg/adaptive_3.avif')
+        background-image: url('../images/bg/adaptive_3.avif')
     }
 
     .forth_adaptive {
-        background-image: url('/Office AIO/images/bg/adaptive_4.avif')
+        background-image: url('../images/bg/adaptive_4.avif')
     }
 
     .fifth_adaptive {
-        background-image: url('/Office AIO/images/bg/adaptive_5.avif')
+        background-image: url('../images/bg/adaptive_5.avif')
     }
 
     .sixth_adaptive {
-        background-image: url('/Office AIO/images/bg/adaptive_6.avif')
+        background-image: url('../images/bg/adaptive_6.avif')
     }
 
     .seventh_adaptive {
-        background-image: url('/Office AIO/images/bg/adaptive_7.avif')
+        background-image: url('../images/bg/adaptive_7.avif')
     }
 }

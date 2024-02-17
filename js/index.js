@@ -1,4 +1,3 @@
-(function swiperWallpaper() {
     const swiper = document.querySelector('div.swiper')
     const a = document.querySelectorAll('.nav-bar li a')
     const h1 = document.querySelector('.main-container h1')
@@ -108,4 +107,3 @@
             swiperWallpaper()
         }, 35000)
     }
-})()
