@@ -18,6 +18,7 @@ next.addEventListener('click', () => {
     currentIndex++
     showSlide(currentIndex)
 })
+
 gallery.addEventListener('click', e => {
     const imgSrc = e.target.src
     

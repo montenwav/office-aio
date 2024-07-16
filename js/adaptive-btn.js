@@ -14,7 +14,6 @@ adaptBtn.addEventListener('click', () => {
         adaptContent.style.opacity = '1'
     }, 0)
 
-
     if (!span_1.classList.contains('span-1') && !span_1.classList.contains('span-2')) {
         adaptContent.style.opacity = '0'
         adaptContent.style.display = 'none'
