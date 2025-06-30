@@ -13,7 +13,7 @@ git clone https://github.com/montenwav/office-aio.git
 npm i
 ```
 
-## Run projectt
+## Run project
 ```
 npm start
 ```
