@@ -18,14 +18,9 @@ npm i
 npm start
 ```
 
-
-
 ## Docker
 ```
 docker build -t office-aio .
-```
-
-```
 docker run --name office-aio -p 5000:5000 -d office-aio
 ```
 
